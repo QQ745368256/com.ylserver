@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_activity" android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bg_iv" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
+            <ImageView android:id="@id/san_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_marg" android:src="@drawable/san" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/name_botton" android:text="观察者" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center" android:id="@id/textView2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机连接码,长按可更改" />
+                <TextView android:textSize="80.0sp" android:textColor="@color/allcolor" android:layout_gravity="center" android:id="@id/idTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0558" android:textAlignment="center" />
+                <TextView android:textSize="@dimen/Font_size" android:gravity="center" android:id="@id/state_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="未开启连接" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/connect_tv" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loading" android:layout_width="22.0dip" android:layout_height="22.0dip" android:indeterminateDrawable="@drawable/anim" android:indeterminateBehavior="repeat" />
+                    <TextView android:textSize="@dimen/Font_size" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="正在连接中..." />
+                </LinearLayout>
+                <CheckBox android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/cb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="隐藏应用" />
+                <TextView android:textSize="25.0sp" android:textColor="@color/allcolor" android:gravity="center" android:layout_gravity="center" android:id="@id/code_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="识别码:" />
+                <TextView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="识别码用于主控端其它账号查找后上线" />
+                <LinearLayout android:id="@id/image_on_off" android:tag="0" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="10.0dip">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/kqlj" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="开启连接" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="第一次使用建议先观看使用教程哦" />
+                <LinearLayout android:id="@id/tutorial_ll" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="10.0dip">
+                    <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/tutorial_bt" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="使用教程" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/textView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="点击按钮，链接至主控端。" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/tm_iv" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

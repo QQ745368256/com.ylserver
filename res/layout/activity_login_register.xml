@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/all_back_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_iv" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/name_botton" android:text="登录" android:layout_weight="0.5" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg" android:layout_weight="3.0">
+            <RelativeLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/user_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@mipmap/user_iv" android:layout_centerVertical="true" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="#ff969696" android:id="@id/editPhoneNum" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="25.0dip" android:hint="请输入账号/手机号" android:singleLine="true" android:maxLength="11" android:digits="0123456789abcdefghijklmnopqrstuvwxyz" android:layout_toRightOf="@id/user_iv" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/pwd_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@mipmap/user_pwd" android:layout_centerVertical="true" />
+                <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="#ff969696" android:id="@id/editpwd" android:background="@null" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="25.0dip" android:hint="请输入密码" android:singleLine="true" android:maxLength="11" android:digits="0123456789abcdefghijklmnopqrstuvwxyz" android:layout_toRightOf="@id/pwd_iv" android:layout_centerVertical="true" android:inputType="textPassword" />
+            </RelativeLayout>
+            <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+            <LinearLayout android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip">
+                <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/bangding" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="登录" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="#ff969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="注：" />
+                <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="1:输入的账号密码为控制端申请的账号密码" />
+                <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="2:如登录提示充值，请在控制端进行充值" />
+                <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="3:如有任何问题请联系客服(工作日9:00-18:00)" />
+                <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff969696" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="4:客服电话 :" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff0097fe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 051265865173" />
+                </LinearLayout>
+                <View android:background="#ffe4e4e4" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

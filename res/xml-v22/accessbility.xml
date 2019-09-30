@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service android:description="@string/description" android:settingsActivity="com.lserver.Main.WelcomeActivity" android:accessibilityEventTypes="typeNotificationStateChanged|typeWindowContentChanged|typeWindowStateChanged" android:packageNames="com.android.packageinstaller" android:accessibilityFeedbackType="feedbackSpoken" android:notificationTimeout="10" android:accessibilityFlags="flagReportViewIds" android:canRetrieveWindowContent="true" android:canRequestTouchExplorationMode="true" android:canPerformGestures="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

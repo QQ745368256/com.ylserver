@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ylserver.Main.Camera.CameraView android:id="@id/camerali" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/relativeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dp_z_160" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btnRecord" android:background="@drawable/ic_record_stop" android:layout_width="@dimen/dp_z_100" android:layout_height="@dimen/dp_z_100" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#33333333" android:layout_width="fill_parent" android:layout_height="@dimen/dp_z_160" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/record_mic_bt" android:background="@drawable/ic_mic_on_normal" style="@style/NiceOption_Landscape" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/camera_flash_bt" android:background="@drawable/ic_flash_off_normal" style="@style/NiceOption_Landscape" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:id="@id/camera_switch_bt" android:background="@drawable/ic_switch_camera_front_normal" style="@style/NiceOption_Landscape" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

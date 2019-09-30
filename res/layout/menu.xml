@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/back_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/head" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/default_head_img" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_marg" android:text="ceshi" android:layout_toRightOf="@id/head" android:layout_alignTop="@id/head" />
+            <TextView android:textSize="@dimen/Font_size" android:textColor="@color/white" android:id="@id/remark_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginTop="5.0dip" android:text="备注名:" android:layout_toRightOf="@id/head" android:layout_below="@id/name_tv" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="3.5">
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/change_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/account" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="更换账号" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/modification" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/remark" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="修改备注名" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/app_sd" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="程序锁定" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/help_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:id="@id/help" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/help" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="使用教程" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/self_starting" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/start" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="隐藏程序" android:layout_weight="3.5" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+                <com.ylserver.view.SwitchButton android:id="@id/switch_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.5" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.ylserver.view.RippleLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/exit_rl" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:id="@id/exit_iv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/exit" android:layout_weight="0.5" />
+                <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mine_ivmarg" android:text="退出程序" android:layout_weight="5.0" android:layout_toRightOf="@id/help" android:layout_centerVertical="true" />
+            </com.ylserver.view.RippleLinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

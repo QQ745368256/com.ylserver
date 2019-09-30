@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/Font_size" android:textColor="@color/text_hui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免责声明" />
+    </LinearLayout>
+    <View android:background="@color/text_hui" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="350.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/mianzeText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </ScrollView>
+    </LinearLayout>
+    <View android:background="@color/text_hui" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_marginTop="25.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:id="@id/layout_agree" android:background="@drawable/dialog_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/ty_bt" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="同意" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="30.0dip" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/layout_res" android:background="@drawable/dialog_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/jj_bt" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="拒绝" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

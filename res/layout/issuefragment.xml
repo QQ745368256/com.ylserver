@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/mine_marg" android:layout_marginRight="@dimen/mine_marg">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="1:为什么要将程序锁定？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="程序被锁定后,系统不会清理被锁定的程序,一直在后台运行。" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content" />
+                    <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="安卓5.1以上" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="2:什么是自启动？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="自启动就是程序会随着手机开机自动启动,避免了手机重启后无法使用程序的问题。" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="3:程序怎么才能一直在线？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1,将程序锁定     2,开启程序的自启动管理" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="4:如果相机黑屏问题怎么解决？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="如果出现相机黑屏问题,检查程序的悬浮窗权限是否已经开启。" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="5:如何设置允许app截取屏幕一次即可？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="将截图屏幕的对话框的“不在提示”打上勾" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="6:购买了为什么不上线？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="购买以后需要重新登录下账号 才可以链接上线码 只要退出账号重新登陆就可以" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="7:我想隐藏图标可以么？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="每个手机都可以隐藏应用图标,但是隐藏图标之前将程序锁定和程序的自启动开启" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="8:程序会不会太浪费流量？" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:layout_width="40.0dip" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/allcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="答:" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="我们软件经过压缩处理 每秒大约1-10K左右 所以不会太浪费流量 不过还是建议小伙伴人在WIFI情况下用哦！土豪请无视" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

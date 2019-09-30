@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_width="105.0dip" android:layout_height="60.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/gn_com_icon" />
+    <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <SeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/all_view_back" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/Font_size" android:textColor="@color/black" android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:text="You have a new request for help" />
+    <View android:background="@color/view_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <LinearLayout android:background="@drawable/dialog_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/dialogCancel" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" />
+        </LinearLayout>
+        <LinearLayout android:visibility="gone" android:layout_width="20.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="@dimen/mine_rl_height" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/Font_size" android:textColor="@drawable/dialog_font" android:id="@id/dialogOk" android:background="@drawable/control_press_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

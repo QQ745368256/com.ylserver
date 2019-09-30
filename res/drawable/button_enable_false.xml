@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffbdbdbd" />
+    <corners android:topLeftRadius="@dimen/cirular_bead_value" android:topRightRadius="@dimen/cirular_bead_value" android:bottomLeftRadius="@dimen/cirular_bead_value" android:bottomRightRadius="@dimen/cirular_bead_value" />
+</shape>

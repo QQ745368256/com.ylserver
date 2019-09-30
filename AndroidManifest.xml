@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.ylserver" platformBuildVersionCode="53" platformBuildVersionName="5.0.3.0"> //悬浮窗口 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.ylserver.permission.RECEIVE_MSG" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.lserver.permission.RECEIVE_MSG"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <application android:allowBackup="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.stub.StubApp" android:supportsRtl="true" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.ylserver.Main.WelcomeActivity" android:theme="@style/AppStartTheme">
+            <intent-filter>
+                <action android:name="com.lserver.Main.WelcomeActivity"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ylserver.Main.MainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ylserver.Main.TransparentActivity" android:theme="@style/TranslucentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ylserver.Main.CatchScreenActivity" android:theme="@style/TranslucentTheme"/>
+        <activity android:name="com.ylserver.Main.MainActivity2" android:theme="@style/TranslucentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ylserver.Main.LoginAndRegisterActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.ylserver.Main.DirectionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.ylserver.Main.DrawScreen.DSActivity" android:theme="@style/TranslucentTheme"/>
+        <activity android:name="com.ylserver.Main.StartActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.ylserver.Main.WebActivity"/>
+        <activity android:name="com.ylserver.Main.OppoActivity"/>
+        <receiver android:name="com.ylserver.Main.Protect.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ylserver.BootService">
+            <intent-filter>
+                <action android:name="com.lserver.BootService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ylserver.CameraService"/>
+        <service android:name="com.ylserver.Main.Protect.AliveJobService2">
+            <intent-filter>
+                <action android:name="com.lserver.Main.Protect.AliveJobService2"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.ylserver.Main.Protect.AliveJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="true" android:name="com.ylserver.MouseAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessbility"/>
+        </service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="gTFD8R5lxz45Wkvr7RV3jSQ5SGyTh49T"/>
+        <service android:enabled="true" android:exported="true" android:name="com.ylserver.utls.SingASongService"/>
+        <service android:name="com.ylserver.CatchService"/>
+        <service android:name="com.ylserver.Tool.UpdateService"/>
+        <service android:name="com.ylserver.utls.NotificationCollectorService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
